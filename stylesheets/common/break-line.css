@@ -1,0 +1,17 @@
+/* break-line style */
+.break-line-mobile {
+  display: none;
+}
+.break-line-desktop {
+  display: block;
+}
+
+/* responsive styles */
+@media screen and (min-width: 768px) {
+  .break-line-mobile {
+    display: block;
+  }
+  .break-line-desktop {
+    display: none;
+  }
+}

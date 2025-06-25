@@ -1,0 +1,106 @@
+/* purpose container */
+.purpose-section__container {
+  padding: 20px 0px;
+}
+
+/* purpose wrapper */
+.purpose-section__wrapper {
+  gap: 0px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* purpose header */
+.purpose-section__header {
+  grid-area: header;
+  text-align: center;
+}
+
+/* purpose image */
+.purpose-section__image {
+  aspect-ratio: 343 / 240;
+  width: 100%;
+  max-width: 346px;
+}
+
+/* purpose description */
+.purpose-section__description {
+  max-width: 684px;
+}
+
+/* purpose list */
+.purpose-section__list {
+  grid-template-columns: 1fr;
+  grid-template-areas: "header";
+  padding: 0px;
+  display: grid;
+  max-width: 845px;
+  width: 100%;
+  gap: 32px;
+  justify-items: center;
+}
+
+/* purpose item */
+.purpose-section__item {
+  max-width: 530px;
+  width: 100%;
+}
+.purpose-section__item-title {
+  font-family: var(--font-family-primary);
+  color: var(--color-text);
+  font-size: clamp(1.25rem, 2vw + 0.5rem, 1.5rem); /* 20px to 24px */
+  line-height: clamp(1.75rem, 2.25rem + 0.5rem, 2rem); /* 28px to 32px */
+  font-weight: 700;
+  text-align: center;
+}
+.purpose-section__item-description {
+  font-family: var(--font-family-primary);
+  font-weight: 400;
+  font-size: clamp(0.875rem, 1vw + 0.5rem, 1rem); /* 14px to 16px */
+  line-height: clamp(1.375rem, 1.5rem + 0.5rem, 1.5rem); /* 22px to 24px */
+  color: var(--color-muted-text);
+  text-align: center;
+}
+
+/* responsive styles */
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  /* purpose wrapper  */
+  .purpose-section__wrapper {
+    gap: 24px;
+    flex-direction: row;
+  }
+
+  /* purpose header */
+  .purpose-section__header {
+    text-align: left;
+  }
+
+  /* purpose list  */
+  .purpose-section__list {
+    grid-template-areas: "header header";
+    grid-template-columns: repeat(2, 1fr);
+    padding: 27px 0px;
+  }
+
+  /* purpose item */
+  .purpose-section__item-title {
+    text-align: left;
+  }
+  .purpose-section__item-description {
+    text-align: left;
+  }
+
+  /* purpose image */
+  .purpose-section__image {
+    aspect-ratio: 1;
+    width: 346.5px;
+  }
+}

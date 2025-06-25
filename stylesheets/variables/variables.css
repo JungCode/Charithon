@@ -1,0 +1,11 @@
+/* file: variables.css */
+:root {
+  --color-primary: #523bb2;
+  --color-secondary: #6851da;
+  --color-background: #e2e5fd;
+  --color-text: #141414;
+  --color-muted-text: #595959;
+  --color-muted-text-light: #ffffff;
+  --color-border: #bfbfbf;
+  --font-family-primary: "Space Grotesk", sans-serif;
+}

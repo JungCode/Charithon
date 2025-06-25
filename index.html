@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="A simple HTML document for Charithon" />
+    <meta name="keywords" content="HTML, Charithon, example" />
+    <meta name="jung" content="Charithon" />
+
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="font"
+      href="https://fonts.gstatic.com/s/spacegrotesk/v21/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUXskPMBBTyJL.woff2"
+      type="font/woff2"
+      crossorigin
+    />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <!-- Style  -->
+    <link
+      rel="stylesheet"
+      href="/stylesheets/main.min.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="/stylesheets/main.min.css" />
+    </noscript>
+
+    <!-- <link rel="stylesheet" href="stylesheets/reset.css" />
+    <link rel="stylesheet" href="stylesheets/variables/variables.css" />
+    <link rel="stylesheet" href="stylesheets/common/break-line.css" />
+    <link rel="stylesheet" href="stylesheets/common/button.css" />
+    <link rel="stylesheet" href="stylesheets/common/container.css" />
+    <link rel="stylesheet" href="stylesheets/common/section.css" />
+    <link rel="stylesheet" href="stylesheets/sections/header.css" />
+    <link
+      rel="stylesheet"
+      href="stylesheets/sections/hero-section/hero-section.css"
+    />
+    <link
+      rel="stylesheet"
+      href="stylesheets/sections/metrics-section/metrics-section.css"
+    />
+    <link
+      rel="stylesheet"
+      href="stylesheets/sections/sponsor-section/sponsor-section.css"
+    />
+    <link
+      rel="stylesheet"
+      href="stylesheets/sections/purpose-section/purpose-section.css"
+    />
+    <link
+      rel="stylesheet"
+      href="stylesheets/sections/download-section/download-section.css"
+    />
+    <link
+      rel="stylesheet"
+      href="stylesheets/sections/question-section/question-section.css"
+    /> -->
+    <title>Charithon</title>
+  </head>
+  <style>
+    @font-face {
+      font-family: "Space Grotesk";
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url("https://fonts.gstatic.com/s/spacegrotesk/v21/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUXskPMBBTyJL.woff2")
+        format("woff2");
+    }
+  </style>
+  <link
+    rel="preload"
+    href="https://fonts.gstatic.com/s/spacegrotesk/v21/V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUXskPMBBTyJL.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__container" id="header">
+        <h1>
+          <a href="#header">
+            <img
+              src="/assets/icons/ic-logo.svg"
+              alt="Charithon – Official Logo"
+              class="header__logo"
+              width="90"
+              height="90"
+            />
+          </a>
+        </h1>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+      <!-- Hero Section  -->
+      <section class="section section--padding-horizontal-off-sm">
+        <div class="container">
+          <!-- Header of the section -->
+          <div
+            class="section__header section__header--center section__header--lg-gap section__header--margin-vertical hero-section__header"
+          >
+            <h2 class="section__title section__title--center">
+              Run With Purpose <br />
+              Make Every Step Matter
+            </h2>
+            <p class="section__description section__description--center">
+              Join the fastest and most affordable way to connect
+              <br class="break-line-mobile" />
+              marathon runners with meaningful causes.
+            </p>
+            <button class="primary-button">Register as Organizer</button>
+          </div>
+          <!-- End of the Header of section -->
+          <!-- Hero Section Figure -->
+          <div class="hero-section__figure-wrapper">
+            <picture class="hero-section__picture">
+              <source
+                media="(min-width: 768px)"
+                srcset="/assets/images/img-laptop.webp"
+                type="image/webp"
+                sizes="(min-width: 768px) 100vw, 100vw"
+              />
+              <img
+                src="/assets/images/img-laptop-tablet.webp"
+                alt="Laptop with Charithon"
+                class="hero-section__image"
+                width="375"
+                height="209"
+                loading="eager"
+                fetchpriority="high"
+              />
+            </picture>
+            <ul class="hero-section__figure-list">
+              <!-- Item 1  -->
+              <li class="hero-section__figure-item">
+                <img
+                  src="/assets/icons/ic-earth.svg"
+                  alt="Earth Icon"
+                  class="hero-section__figure-item-icon"
+                  width="32"
+                  height="32"
+                />
+                <!-- Item content -->
+                <div class="hero-section__figure-item-content">
+                  <span class="hero-section__figure-item-title"
+                    >Support Charities</span
+                  >
+                  <p class="hero-section__figure-item-description">
+                    Choose a cause and make your run count.
+                  </p>
+                </div>
+              </li>
+              <!-- Item 2 -->
+              <li class="hero-section__figure-item">
+                <img
+                  src="/assets/icons/ic-trade.svg"
+                  alt="Trade Icon"
+                  class="hero-section__figure-item-icon"
+                  width="32"
+                  height="32"
+                />
+                <!-- Item content -->
+                <div class="hero-section__figure-item-content">
+                  <span class="hero-section__figure-item-title"
+                    >Seamless Giving</span
+                  >
+                  <p class="hero-section__figure-item-description">
+                    We handle all charity payments, so you can focus on the
+                    finish line.
+                  </p>
+                </div>
+              </li>
+              <!-- Item 3 -->
+              <li class="hero-section__figure-item">
+                <img
+                  src="/assets/icons/ic-piece.svg"
+                  alt="Piece Icon"
+                  class="hero-section__figure-item-icon"
+                  width="32"
+                  height="32"
+                />
+                <!-- Item content -->
+                <div class="hero-section__figure-item-content">
+                  <span class="hero-section__figure-item-title"
+                    >Track & Share</span
+                  >
+                  <p class="hero-section__figure-item-description">
+                    AI-powered training, stats, and social sharing.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- End of Hero Section Figure -->
+        </div>
+      </section>
+
+      <!-- Metrics Section  -->
+      <section class="section section--padding-bottom section--padding-top">
+        <div class="container">
+          <!-- Header of the section -->
+          <div class="section__header section__header--center">
+            <div class="metrics-section__wrapper">
+              <picture>
+                <source
+                  media="(min-width: 769px)"
+                  srcset="/assets/images/img-runner-girl.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="/assets/images/img-runner-girl.webp"
+                  alt="Runner girl"
+                  class="metrics-section__header-image"
+                  width="402"
+                  height="489"
+                />
+              </picture>
+              <div class="metrics-section__content">
+                <h2 class="section__title section__title--center">
+                  Athlete Statistics
+                </h2>
+                <p
+                  class="section__description section__description--center metrics-section__header-description"
+                >
+                  Join over 10,000 marathon runners who are making a difference.
+                  With Charithon, every step you take helps support a cause you
+                  care about.
+                </p>
+              </div>
+              <picture>
+                <source
+                  media="(min-width: 769px)"
+                  srcset="/assets/images/img-people.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="/assets/images/img-people.webp"
+                  alt="People"
+                  class="metrics-section__header-image"
+                  width="392"
+                  height="485"
+                />
+              </picture>
+            </div>
+          </div>
+          <!-- End of the Header of section -->
+
+          <!-- Metrics List -->
+          <ul class="metrics-section__list">
+            <!-- Item 1 -->
+            <li class="metrics-section__item">
+              <span class="metrics-section__item-number">40+</span>
+              <span class="metrics-section__item-label">Register events</span>
+            </li>
+            <!-- Item 2 -->
+            <li class="metrics-section__item">
+              <span class="metrics-section__item-number">3,000+</span>
+              <span class="metrics-section__item-label"
+                >Campaigns launched</span
+              >
+            </li>
+            <!-- Item 3 -->
+            <li class="metrics-section__item">
+              <span class="metrics-section__item-number">20+</span>
+              <span class="metrics-section__item-label">Charity partners</span>
+            </li>
+            <!-- Item 4 -->
+            <li class="metrics-section__item">
+              <span class="metrics-section__item-number">8+</span>
+              <span class="metrics-section__item-label">Countries</span>
+            </li>
+          </ul>
+          <!-- End of Metrics List -->
+        </div>
+      </section>
+
+      <!-- Sponsor Section  -->
+      <section
+        class="section section--padding-bottom section--padding-top section--bg-purple"
+      >
+        <div class="container">
+          <!-- Header of the section -->
+          <div
+            class="section__header section__header--center section__header--lg-gap"
+          >
+            <h2 class="section__title section__title--center">
+              Let Your Brand <br class="break-line-desktop" />
+              Run For Good
+            </h2>
+            <p
+              class="section__description section__description--center sponsor-section__header-description"
+            >
+              At Charithon, every stride shares a story. Partner with us to
+              align your brand with purpose, passion, and the moments that truly
+              matter.
+            </p>
+            <button class="primary-button">Register as Organizer</button>
+          </div>
+          <!-- End of the Header of section -->
+        </div>
+      </section>
+
+      <!-- Purpose Section  -->
+      <section class="section section--padding-top section--padding-top-off-sm">
+        <div class="container purpose-section__container">
+          <div class="purpose-section__wrapper">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="/assets/icons/ic-big-logo.svg"
+              />
+              <img
+                src="/assets/icons/ic-big-logo-mobile.svg"
+                alt="Charithon Logo"
+                class="purpose-section__image"
+              />
+            </picture>
+            <ul class="purpose-section__list">
+              <!-- Header of the section -->
+              <li
+                class="section__header section__header--sm-gap purpose-section__header"
+              >
+                <h2 class="section__title">Why Charithon?</h2>
+                <p class="section__description">
+                  At Charithon, we empower runners to make a difference with
+                  every step they take. Join us in creating purpose-driven
+                  experiences that benefit both athletes and charities.
+                </p>
+              </li>
+              <li class="purpose-section__item">
+                <h3 class="purpose-section__item-title">For Runners</h3>
+                <p class="purpose-section__item-description">
+                  Turn races into impactful journeys that support causes close
+                  to your heart.
+                </p>
+              </li>
+              <li class="purpose-section__item">
+                <h3 class="purpose-section__item-title">For Charities</h3>
+                <p class="purpose-section__item-description">
+                  Easily attract new donors and enhance your fundraising efforts
+                  with our platform.
+                </p>
+              </li>
+              <li class="purpose-section__item">
+                <h3 class="purpose-section__item-title">
+                  For Event Organizers
+                </h3>
+                <p class="purpose-section__item-description">
+                  Increase engagement & ticket sales through premium features
+                </p>
+              </li>
+              <!-- End of the Header of section -->
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Download Section  -->
+      <section class="section section--padding-top section--padding-bottom">
+        <div class="container container--purple container--ovf-hidden">
+          <div class="download-section__wrapper">
+            <div class="download-section__header">
+              <!-- Header of the section -->
+              <div class="section__header section__header--sm-gap">
+                <h2 class="section__title section__title--light">
+                  Train, Race, Give Back
+                </h2>
+                <p class="section__description section__description--light">
+                  Monitor Every Step Toward Change!
+                </p>
+              </div>
+              <!-- End of the Header of section -->
+
+              <!-- Download button  -->
+              <div class="download-section__button-wrapper">
+                <button class="download-section__button">
+                  <img
+                    src="/assets/icons/ic-download-ios.svg"
+                    alt="Download iOS icon"
+                    class="download-section__button-icon"
+                    width="144"
+                    height="48"
+                  />
+                </button>
+                <button class="download-section__button">
+                  <img
+                    src="/assets/icons/ic-download-android.svg"
+                    alt="Download android icon"
+                    class="download-section__button-icon"
+                    width="162"
+                    height="48"
+                  />
+                </button>
+              </div>
+            </div>
+            <figure class="download-section__figure">
+              <picture class="download-section__picture">
+                <source
+                  srcset="/assets/images/img-phone.webp"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  src="/assets/images/img-phone-mobile.webp"
+                  alt="Phone with Charithon"
+                  class="download-section__image"
+                  width="640"
+                  height="480"
+                />
+              </picture>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Questions Section  -->
+      <section class="section section--padding-top section--padding-bottom">
+        <div class="container container--border container--ovf-hidden">
+          <div class="question-section__wrapper">
+            <div class="question-section__content">
+              <div class="question-section__header">
+                <!-- Header of the section -->
+                <div class="section__header section__header--sm-gap">
+                  <h2 class="section__title question-section__header-title">
+                    Become Our Partner
+                  </h2>
+                  <p
+                    class="section__description question-section__header-description"
+                  >
+                    Send us the email to get more details
+                  </p>
+                </div>
+                <!-- End of the Header of section -->
+              </div>
+              <div class="question-section__form">
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  placeholder="First Name"
+                  class="question-section__input question-section__input-1"
+                />
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  placeholder="Last Name"
+                  class="question-section__input question-section__input-2"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  class="question-section__input question-section__input-3"
+                />
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Leave us message"
+                  class="question-section__input question-section__input--textarea question-section__input-4"
+                ></textarea>
+                <input
+                  type="submit"
+                  value="Submit"
+                  class="primary-button question-section__input-5"
+                />
+              </div>
+            </div>
+            <figure class="question-section__figure">
+              <picture>
+                <source
+                  srcset="/assets/images/img-world-map-mobile.webp"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <img
+                  src="/assets/images/img-world-map-mobile.webp"
+                  alt="World Map"
+                  class="question-section__image"
+                  width="737"
+                  height="560"
+                />
+              </picture>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
